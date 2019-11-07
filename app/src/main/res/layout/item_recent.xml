@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:elevation="20dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardrecent">
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/recentimage"
+            android:layout_width="100dp"
+            android:layout_height="105dp"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/recentnamefood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/recentimage"
+            android:layout_toRightOf="@+id/recentimage"
+            android:text="ชื่ออาหาร"
+            android:textColor="#000"
+            android:textSize="20sp"
+            app:fontFamily="@font/mitr_semibold" />
+
+        <TextView
+            android:id="@+id/recentnameres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recentnamefood"
+            android:layout_alignStart="@+id/recentnamefood"
+            android:layout_alignLeft="@+id/recentnamefood"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:text="ร้านอาหาร"
+            android:textColor="#000"
+            android:textSize="20sp"
+            app:fontFamily="@font/mitr_semibold" />
+
+        <TextView
+            android:id="@+id/recentdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recentnameres"
+            android:layout_alignStart="@+id/recentnameres"
+            android:layout_alignLeft="@+id/recentnameres"
+            android:layout_alignBottom="@+id/recentimage"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="-9dp"
+            android:text="99-99-9999"
+            android:textColor="#000"
+            android:textSize="20sp"
+            app:fontFamily="@font/mitr_semibold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/recentdate"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="8dp"
+            android:text="สั่งอีกครั้ง"
+            android:textColor="#FF5252"
+            app:fontFamily="@font/mitr_semibold" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

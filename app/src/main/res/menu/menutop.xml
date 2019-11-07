@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/setting_menu"
+        android:icon="@drawable/ic_action_setting2"
+        android:title="Setting"
+        />
+
+    <item
+        android:id="@+id/logout_menu"
+        android:icon="@drawable/ic_action_logout"
+        android:title="Logout"/>
+    <item
+        android:id="@+id/profile_menu"
+        android:icon="@drawable/ic_action_profile2"
+        android:title="Profile"
+        app:showAsAction="always"/>
+
+</menu>

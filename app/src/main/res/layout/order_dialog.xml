@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/dialogname"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fontFamily="@font/mitr_semibold"
+        android:text="ชื่อร้าน"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/dialogprice"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fontFamily="@font/mitr_semibold"
+            android:text="ชื่ออาหาร 50"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/dialogprice"
+            android:layout_toRightOf="@+id/dialogprice"
+            android:text="บาท"
+            android:textColor="#000"
+            android:textSize="20sp"
+            app:fontFamily="@font/mitr_semibold" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/dialogL"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontFamily="@font/mitr_semibold"
+                android:text=" - "/>
+            <TextView
+                android:id="@+id/dialogcount"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontFamily="@font/mitr_semibold"
+                android:text="1"/>
+            <TextView
+                android:id="@+id/dialogB"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontFamily="@font/mitr_semibold"
+                android:text=" + "/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="141dp"
+            android:layout_marginLeft="141dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="ยกเลิก"
+            android:textColor="#000"
+            android:textSize="15sp"
+            app:fontFamily="@font/mitr_semibold" />
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/cancle"
+            android:layout_alignBottom="@+id/cancle"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/cancle"
+            android:layout_toRightOf="@+id/cancle"
+            android:text="สั่งอาหาร"
+            android:textColor="#000"
+            android:textSize="15sp"
+            app:fontFamily="@font/mitr_semibold" />
+    </RelativeLayout>
+
+</LinearLayout>

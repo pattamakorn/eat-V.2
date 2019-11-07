@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:elevation="10dp"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="3dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/Mitem_home">
+
+    <RelativeLayout
+        android:layout_width="261dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imagefood"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:paddingLeft="10dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/namefood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imagefood"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/imagefood"
+            android:layout_toRightOf="@+id/imagefood"
+            android:text="ชื่ออาหาร"
+            android:textStyle="bold"
+            app:fontFamily="@font/mitr_semibold" />
+
+        <TextView
+            android:id="@+id/nameres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/namefood"
+            android:layout_alignStart="@+id/namefood"
+            android:layout_alignLeft="@+id/namefood"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:text="ชื่อร้านอาหาร"
+            android:textStyle="bold"
+            app:fontFamily="@font/mitr_semibold" />
+
+        <TextView
+            android:id="@+id/pricefood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameres"
+            android:layout_alignStart="@+id/nameres"
+            android:layout_alignLeft="@+id/nameres"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:text="ราคาอาหาร"
+            android:textStyle="bold"
+            app:fontFamily="@font/mitr_semibold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/pricefood"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/pricefood"
+            android:layout_toRightOf="@+id/pricefood"
+            android:text="บาท"
+            android:textStyle="bold"
+            app:fontFamily="@font/mitr_semibold" />
+
+        <TextView
+            android:id="@+id/orderFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="84dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="11dp"
+            android:text="สั่งเลย"
+            android:textColor="#FF5722"
+            android:textStyle="bold"
+            app:fontFamily="@font/mitr_semibold" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

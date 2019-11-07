@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_action_top"
+        android:title="เมนูยอดฮิต" />
+
+    <item
+        android:id="@+id/favorite"
+        android:icon="@drawable/ic_action_favorite"
+        android:title="ร้านโปรด" />
+
+    <item
+        android:id="@+id/kind_of_food"
+        android:icon="@drawable/ic_action_type"
+        android:title="ประเภทอาหาร" />
+
+    <item
+        android:id="@+id/recentapp"
+        android:icon="@drawable/ic_action_recent"
+        android:title="ประวัติการซื้อ" />
+
+
+</menu>

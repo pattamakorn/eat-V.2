@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/imgfoodagain"
+        android:layout_width="201dp"
+        android:layout_height="97dp"
+        android:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:layout_marginTop="110dp"
+        android:id="@+id/namefoodagain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagefood"
+        android:text="ชื่ออาหาร"
+        android:textColor="#000"
+        android:textSize="19sp"
+        app:fontFamily="@font/mitr_semibold" />
+    <TextView
+        android:id="@+id/spricefood"
+        android:layout_below="@+id/namefoodagain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50 บาท"
+        android:textColor="#000"
+        android:textSize="19sp"
+        app:fontFamily="@font/mitr_semibold"/>
+
+    <TextView
+        android:id="@+id/canagain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="168dp"
+        android:layout_toEndOf="@+id/namefoodagain"
+        android:layout_toRightOf="@+id/namefoodagain"
+        android:text="ยกเลิก"
+        android:textSize="15sp"
+        app:fontFamily="@font/mitr_semibold" />
+
+    <TextView
+        android:id="@+id/okagain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/canagain"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="278dp"
+        android:layout_marginRight="278dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/canagain"
+        android:layout_toRightOf="@+id/canagain"
+        android:text="ยืนยัน"
+        android:textSize="15sp"
+        app:fontFamily="@font/mitr_semibold" />
+
+    <TextView
+        android:id="@+id/lagain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/namefoodagain"
+        android:layout_marginStart="-87dp"
+        android:layout_marginLeft="-87dp"
+        android:layout_marginTop="-10dp"
+        android:layout_toEndOf="@+id/imgfoodagain"
+        android:layout_toRightOf="@+id/imgfoodagain"
+        android:text=" - "
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:fontFamily="@font/mitr_semibold" />
+
+    <TextView
+        android:textSize="18sp"
+        app:fontFamily="@font/mitr_semibold"
+        android:textColor="#000"
+        android:id="@+id/nagain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lagain"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/lagain"
+        android:layout_toRightOf="@+id/lagain"
+        android:text="0" />
+
+    <TextView
+        android:textSize="18sp"
+        app:fontFamily="@font/mitr_semibold"
+        android:textColor="#000"
+        android:id="@+id/bagain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/nagain"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/nagain"
+        android:layout_toRightOf="@+id/nagain"
+        android:text=" + " />
+
+</RelativeLayout>
